@@ -1,6 +1,6 @@
 from tkinter import *
 import math
-# ---------------------------- CONSTANTS ------------------------------- #
+
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
@@ -13,7 +13,7 @@ reps = 0
 timer = None
 checks = ""
 
-# ---------------------------- TIMER RESET ------------------------------- # 
+
 def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text, text="00:00")
@@ -23,9 +23,6 @@ def reset_timer():
     reps = 0
 
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
-
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
 def start_timer():
     global reps
     reps += 1
@@ -61,7 +58,7 @@ def count_down(count):
             checks += "✔"
         checkmark_label.config(text=checks)
 
-# ---------------------------- UI SETUP ------------------------------- #
+
 window = Tk()
 window.title("Pomodoro")
 window.config(padx=100, pady=50, bg= YELLOW)
