@@ -20,6 +20,7 @@ def reset_timer():
     status_label.config(text="Timer")
     global checks, reps
     checks = ""
+    checkmark_label.config(text=checks)
     reps = 0
 
 
